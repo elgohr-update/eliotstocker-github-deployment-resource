@@ -29,7 +29,7 @@ jobs:
 
     - name: Publish Image
       if: startsWith(github.ref, 'v')
-      uses: elgohr/Publish-Docker-Github-Action@1.11
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: andyhume/github-deployment-resource
         username: ${{ secrets.DOCKER_USERNAME }}
